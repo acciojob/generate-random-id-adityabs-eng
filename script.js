@@ -1,12 +1,12 @@
 function makeid(l) {
   // write your code here
-	let result ;
+	let result  = "";
 	let char_list=
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012456789"
-	for(let i = 0 ; i<= l ; i++){
+	for(let i = 0 ; i<l ; i++){
 		result += char_list.charAt(
 			Math.floor(
-				Math.random*char_list.length()
+				Math.random()*char_list.length
 			)
 		);
 	}
